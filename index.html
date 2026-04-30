@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <meta name="theme-color" content="#07040f">
+  <title>Jasmin ✦ Sob o Luar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Great+Vibes&family=Cinzel+Decorative:wght@400;700&family=Raleway:wght@200;300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ════ UNIVERSO DE FUNDO ════ -->
+<canvas id="universeCanvas"></canvas>
+
+<!-- Aurora boreal suave -->
+<div class="aurora">
+  <div class="aurora-band a1"></div>
+  <div class="aurora-band a2"></div>
+  <div class="aurora-band a3"></div>
+</div>
+
+<!-- Lua com halo e raios -->
+<div class="moon-system" id="moonSystem">
+  <div class="moon-rays"></div>
+  <div class="moon-outer-halo"></div>
+  <div class="moon-inner-halo"></div>
+  <canvas id="moonCanvas" width="160" height="160"></canvas>
+  <div class="moon-face">☽</div>
+</div>
+
+<!-- Ramos de jasmim -->
+<div class="branch-left"  id="branchLeft"></div>
+<div class="branch-right" id="branchRight"></div>
+
+<!-- Pétalas e fireflies -->
+<canvas id="petalCanvas"></canvas>
+<canvas id="fireflyCanvas"></canvas>
+
+<!-- ════ CONTEÚDO ════ -->
+<div class="page">
+
+  <!-- INTRO RIBBON -->
+  <div class="intro-ribbon reveal" data-delay="0">
+    <span class="ribbon-line"></span>
+    <span class="ribbon-text">uma história de amor</span>
+    <span class="ribbon-line"></span>
+  </div>
+
+  <!-- ── HERO ── -->
+  <section class="hero">
+    <div class="hero-bg-glow"></div>
+
+    <p class="hero-for reveal" data-delay="100">Para</p>
+    <h1 class="hero-name reveal" data-delay="200">Jasmin</h1>
+    <div class="name-underline reveal" data-delay="300">
+      <svg viewBox="0 0 320 18" xmlns="http://www.w3.org/2000/svg">
+        <path d="M 10 9 Q 80 2 160 9 Q 240 16 310 9" fill="none"
+              stroke="url(#uGrad)" stroke-width="1.5" stroke-linecap="round"/>
+        <defs>
+          <linearGradient id="uGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%"   stop-color="transparent"/>
+            <stop offset="30%"  stop-color="#e2c07a"/>
+            <stop offset="70%"  stop-color="#f0e6c8"/>
+            <stop offset="100%" stop-color="transparent"/>
+          </linearGradient>
+        </defs>
+      </svg>
+    </div>
+
+    <blockquote class="hero-poem reveal" data-delay="400">
+      Como o Lírio Azu que só floresce à noite,<br>
+      você perfuma os meus silêncios<br>
+      e transforma a escuridão em jardim.
+    </blockquote>
+
+    <div class="hero-date reveal" data-delay="550">
+      <div class="date-piece">
+        <span class="date-big">24</span>
+        <span class="date-small">dia</span>
+      </div>
+      <div class="date-ornament">✦</div>
+      <div class="date-piece">
+        <span class="date-big">Abril</span>
+        <span class="date-small">mês</span>
+      </div>
+      <div class="date-ornament">✦</div>
+      <div class="date-piece">
+        <span class="date-big">2026</span>
+        <span class="date-small">ano</span>
+      </div>
+    </div>
+
+    <div class="scroll-cue reveal" data-delay="700">
+      <div class="cue-inner">
+        <span class="cue-dot"></span>
+        <span class="cue-dot"></span>
+        <span class="cue-dot"></span>
+      </div>
+      <span class="cue-text">role para descobrir</span>
+    </div>
+  </section>
+
+  <!-- ── CARTA ── -->
+  <section class="letter-section">
+    <div class="section-tag reveal" data-delay="0">I</div>
+    <h2 class="section-title reveal" data-delay="80">A Carta</h2>
+    <div class="letter-wrap reveal" data-delay="160">
+      <div class="letter-corner tl"></div>
+      <div class="letter-corner tr"></div>
+      <div class="letter-corner bl"></div>
+      <div class="letter-corner br"></div>
+      <div class="letter-seal">✦</div>
+      <p class="letter-dear">Minha Jasmin,</p>
+      <p class="letter-para">
+       Desde o instante em que nossos caminhos se cruzaram, algo dentro de mim encontrou um lar. Foi como se, pela primeira vez, meu coração tivesse reconhecido exatamente onde deveria estar. Minha vida, que antes seguia em silêncio, ganhou cor, sentido e uma paz que eu nem sabia que procurava.
+      </p>
+      <p class="letter-para">
+        Com você, cada dia carrega um brilho diferente. Os momentos mais simples se tornam preciosos, e cada lembrança ao seu lado é guardada com um cuidado quase sagrado. Você tocou partes de mim que ninguém jamais alcançou, iluminou sombras antigas e preencheu vazios que eu já tinha aprendido a aceitar.
+      </p>
+      <p class="letter-para">
+        Eu descobri, com você, que amar de verdade é mais do que sentir. É se entregar por inteiro, é escolher permanecer, cuidar, compreender. É olhar para você todos os dias e ter a certeza, serena e profunda, de que é você. Sempre você.
+      </p>
+      <p class="letter-para">
+        E assim como o Lírio Azul floresce na quietude, delicado e raro, você entrou na minha vida sem alarde, mas transformou tudo ao seu redor. Sua presença acalma, sua essência envolve, e o amor que sinto por você cresce em silêncio, forte e verdadeiro, como algo que nasceu para durar.
+      </p>
+
+      <p class="letter-sign">
+        Com todo o meu amor, para sempre,
+       <span class="letter-signame"> Kaio</span>
+      </p>
+    </div>
+  </section>
+
+  <!-- ── CONTADOR ── -->
+  <section class="counter-section">
+    <div class="section-tag reveal" data-delay="0">II</div>
+    <h2 class="section-title reveal" data-delay="80">Nosso Tempo</h2>
+    <p class="section-sub reveal" data-delay="140">cada segundo, uma eternidade</p>
+
+    <div class="big-time reveal" data-delay="200">
+      <div class="big-unit" onclick="celebrate(this)">
+        <div class="big-num" id="years">0</div>
+        <div class="big-lbl">Anos</div>
+        <div class="big-hint">de amor</div>
+      </div>
+      <div class="big-sep">
+        <svg width="30" height="80" viewBox="0 0 30 80">
+          <line x1="15" y1="5"  x2="15" y2="30" stroke="rgba(200,168,75,0.3)" stroke-width="1"/>
+          <circle cx="15" cy="40" r="3" fill="rgba(200,168,75,0.5)"/>
+          <line x1="15" y1="50" x2="15" y2="75" stroke="rgba(200,168,75,0.3)" stroke-width="1"/>
+        </svg>
+      </div>
+      <div class="big-unit" onclick="celebrate(this)">
+        <div class="big-num" id="days">0</div>
+        <div class="big-lbl">Dias</div>
+        <div class="big-hint">juntos</div>
+      </div>
+    </div>
+
+    <div class="clock-display reveal" data-delay="280">
+      <div class="clock-arc">
+        <svg id="clockArc" viewBox="0 0 300 40" xmlns="http://www.w3.org/2000/svg">
+          <path d="M 20 35 Q 150 5 280 35" fill="none" stroke="rgba(200,168,75,0.15)" stroke-width="1"/>
+        </svg>
+      </div>
+      <div class="clock-nums">
+        <div class="cn"><div class="cn-val" id="hours">00</div><div class="cn-lbl">h</div></div>
+        <div class="cn-sep">:</div>
+        <div class="cn"><div class="cn-val" id="minutes">00</div><div class="cn-lbl">m</div></div>
+        <div class="cn-sep">:</div>
+        <div class="cn"><div class="cn-val" id="seconds">00</div><div class="cn-lbl">s</div></div>
+        <div class="cn-sep cn-sep-ms">·</div>
+        <div class="cn cn-ms"><div class="cn-val cn-val-ms" id="milliseconds">000</div><div class="cn-lbl">ms</div></div>
+      </div>
+    </div>
+
+    <div class="stat-row reveal" data-delay="360">
+      <div class="stat-gem" onclick="sparkHere(event)">
+        <div class="gem-icon">🌙</div>
+        <div class="gem-val" id="months">0</div>
+        <div class="gem-lbl">Meses</div>
+      </div>
+      <div class="stat-gem" onclick="sparkHere(event)">
+        <div class="gem-icon">✦</div>
+        <div class="gem-val" id="weeks">0</div>
+        <div class="gem-lbl">Semanas</div>
+      </div>
+      <div class="stat-gem" onclick="sparkHere(event)">
+        <div class="gem-icon">☽</div>
+        <div class="gem-val" id="total-hours">0</div>
+        <div class="gem-lbl">Horas</div>
+      </div>
+      <div class="stat-gem" onclick="sparkHere(event)">
+        <div class="gem-icon">🌕</div>
+        <div class="gem-val" id="total-minutes">0</div>
+        <div class="gem-lbl">Minutos</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CONSTELAÇÃO ── -->
+  <section class="constellation-section">
+    <div class="section-tag reveal" data-delay="0">III</div>
+    <h2 class="section-title reveal" data-delay="80">Nossa Constelação</h2>
+    <p class="section-sub reveal" data-delay="140">toque nas estrelas para descobrir</p>
+    <div class="constellation-wrap reveal" data-delay="200">
+      <canvas id="constellationCanvas"></canvas>
+    </div>
+  </section>
+
+  <!-- ── RAZÕES ── -->
+  <section class="reasons-section">
+    <div class="section-tag reveal" data-delay="0">IV</div>
+    <h2 class="section-title reveal" data-delay="80">Por Que Te Amo</h2>
+    <p class="section-sub reveal" data-delay="140">flores do coração</p>
+    <div class="jasmine-grid">
+      <div class="jasmine-card reveal" data-delay="0"   onclick="bloomCard(this,event)">
+        <div class="jc-flower" id="jf0"></div>
+        <div class="jc-icon">🌙</div>
+        <p class="jc-text">Pelo seu jeito de rir que ilumina qualquer ambiente</p>
+        <div class="jc-glow"></div>
+      </div>
+      <div class="jasmine-card reveal" data-delay="80"  onclick="bloomCard(this,event)">
+        <div class="jc-flower" id="jf1"></div>
+        <div class="jc-icon">🌕</div>
+        <p class="jc-text">Por cada conversa que transforma horas em segundos</p>
+        <div class="jc-glow"></div>
+      </div>
+      <div class="jasmine-card reveal" data-delay="160" onclick="bloomCard(this,event)">
+        <div class="jc-flower" id="jf2"></div>
+        <div class="jc-icon">🌕</div>
+        <p class="jc-text">Pela sua força e delicadeza ao mesmo tempo</p>
+        <div class="jc-glow"></div>
+      </div>
+      <div class="jasmine-card reveal" data-delay="240" onclick="bloomCard(this,event)">
+        <div class="jc-flower" id="jf3"></div>
+        <div class="jc-icon">💫</div>
+        <p class="jc-text">Por me fazer querer ser uma pessoa melhor todo dia</p>
+        <div class="jc-glow"></div>
+      </div>
+      <div class="jasmine-card reveal" data-delay="320" onclick="bloomCard(this,event)">
+        <div class="jc-flower" id="jf4"></div>
+        <div class="jc-icon">🎵</div>
+        <p class="jc-text">Por tornar momentos simples em lembranças eternas</p>
+        <div class="jc-glow"></div>
+      </div>
+      <div class="jasmine-card reveal" data-delay="400" onclick="bloomCard(this,event)">
+        <div class="jc-flower" id="jf5"></div>
+        <div class="jc-icon">💝</div>
+        <p class="jc-text">Por existir e me escolher todos os dias</p>
+        <div class="jc-glow"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── GALERIA ── -->
+  <section class="gallery-section">
+    <div class="section-tag reveal" data-delay="0">V</div>
+    <h2 class="section-title reveal" data-delay="80">Nossos Momentos</h2>
+    <p class="section-sub reveal" data-delay="140">capítulos da nossa história</p>
+    <div class="gallery-mosaic">
+      <div class="gm-tile gm-tall reveal" data-delay="0" onclick="tileClick(this,event)">
+        <div class="gm-inner"><span class="gm-ico">📷</span><span class="gm-cap">O primeiro dia ❤️</span></div>
+        <div class="gm-frame"></div>
+      </div>
+      <div class="gm-tile reveal" data-delay="100" onclick="tileClick(this,event)">
+        <div class="gm-inner"><span class="gm-ico">🌅</span><span class="gm-cap">Momento feliz</span></div>
+        <div class="gm-frame"></div>
+      </div>
+      <div class="gm-tile reveal" data-delay="200" onclick="tileClick(this,event)">
+        <div class="gm-inner"><span class="gm-ico">🌙</span><span class="gm-cap">Noite especial</span></div>
+        <div class="gm-frame"></div>
+      </div>
+      <div class="gm-tile gm-wide reveal" data-delay="300" onclick="tileClick(this,event)">
+        <div class="gm-inner"><span class="gm-ico">👩‍❤️‍👨</span><span class="gm-cap">Para sempre juntos 💕</span></div>
+        <div class="gm-frame"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PROMESSAS ── -->
+  <section class="promises-section">
+    <div class="section-tag reveal" data-delay="0">VI</div>
+    <h2 class="section-title reveal" data-delay="80">Minhas Promessas</h2>
+    <p class="section-sub reveal" data-delay="140">juramentos sob o luar</p>
+    <div class="vows">
+      <div class="vow reveal" data-delay="0" data-vow-id="0">
+        <div class="vow-moon-ic">☽</div>
+        <p class="vow-txt">Te amar mais a cada amanhecer</p>
+        <button class="vow-btn" onclick="sealVow(this)"><span>✦</span></button>
+      </div>
+      <div class="vow reveal" data-delay="80" data-vow-id="1">
+        <div class="vow-moon-ic">☽</div>
+        <p class="vow-txt">Estar ao seu lado em todos os momentos</p>
+        <button class="vow-btn" onclick="sealVow(this)"><span>✦</span></button>
+      </div>
+      <div class="vow reveal" data-delay="160" data-vow-id="2">
+        <div class="vow-moon-ic">☽</div>
+        <p class="vow-txt">Fazer você sorrir todos os dias</p>
+        <button class="vow-btn" onclick="sealVow(this)"><span>✦</span></button>
+      </div>
+      <div class="vow reveal" data-delay="240" data-vow-id="3">
+        <div class="vow-moon-ic">☽</div>
+        <p class="vow-txt">Construir um futuro lindo com você</p>
+        <button class="vow-btn" onclick="sealVow(this)"><span>✦</span></button>
+      </div>
+      <div class="vow reveal" data-delay="320" data-vow-id="4">
+        <div class="vow-moon-ic">☽</div>
+        <p class="vow-txt">Te escolher para sempre, sem hesitar</p>
+        <button class="vow-btn" onclick="sealVow(this)"><span>✦</span></button>
+      </div>
+    </div>
+    <p class="section-tag reveal" data-delay="0"">Toque nas estrelas para selar cada promessa sob a lua</p>
+  </section>
+
+  <!-- ── MÚSICA ── -->
+  <section class="music-section">
+    <div class="section-tag reveal" data-delay="0">VII</div>
+    <h2 class="section-title reveal" data-delay="80">Nossa Música</h2>
+    <div class="music-world reveal" data-delay="160">
+      <div class="music-orb" id="musicOrb" onclick="toggleMusic()">
+        <div class="orb-ring r1"></div>
+        <div class="orb-ring r2"></div>
+        <div class="orb-ring r3"></div>
+        <div class="orb-core">
+          <span id="musicIcon">▶</span>
+        </div>
+        <div class="orb-note n1">♪</div>
+        <div class="orb-note n2">♫</div>
+        <div class="orb-note n3">♩</div>
+      </div>
+      <div class="music-text">
+        <p class="music-song">Julieta</p>
+        <p class="music-sub">Kamaïtachi</p>
+        <p class="music-hint">a trilha sonora do nosso amor</p>
+        <div class="song-switcher">
+          <button class="song-btn active" onclick="switchSong(0)">
+            <span class="song-btn-dot"></span>Julieta
+          </button>
+          <button class="song-btn" onclick="switchSong(1)">
+            <span class="song-btn-dot"></span>Golden Brown
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer class="footer">
+    <div class="footer-jasmine" id="footerJasmine"></div>
+    <div class="footer-moon-ico">☽</div>
+    <p class="footer-quote">
+      "Sob o mesmo luar que iluminou<br>
+      o jardim onde os Lírios azuis floresceu,<br>
+       floresço eu, amando você."
+    </p>
+    <div class="footer-names">Kaio <span>❤️</span> Jasmin</div> 
+    <div class="footer-names">Para Sempre</div>
+  </footer>
+
+</div><!-- /page -->
+
+<div id="particles"></div>
+<div class="toast" id="toast"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
